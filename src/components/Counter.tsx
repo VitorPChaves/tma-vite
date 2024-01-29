@@ -15,12 +15,12 @@ export function Counter() {
   const { value, address, sendIncrement } = useCounterContract();
 
   return (
-    <div className="Container">
+    <div className="">
       <TonConnectButton />
 
       <Card>
         <FlexBoxCol>
-          <h3>Counter</h3>
+          <h3 className="">Counter</h3>
           <FlexBoxRow>
             <b>Address</b>
             <Ellipsis>{address}</Ellipsis>

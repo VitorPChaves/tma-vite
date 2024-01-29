@@ -34,14 +34,16 @@ function App() {
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
-            <TonConnectButton />
-            <Button>
+            <div className="flex items-end justify-end w-full border">
+              <TonConnectButton />
+            </div>
+            {/* <Button>
               {network
                 ? network === CHAIN.MAINNET
                   ? "mainnet"
                   : "testnet"
                 : "N/A"}
-            </Button>
+            </Button> */}
           </FlexBoxRow>
           <Counter />
           <TransferTon />

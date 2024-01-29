@@ -1,5 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 :root {
   --tg-theme-bg-color: #efeff3;
   --tg-theme-button-color: #2eaddc;
   --tg-theme-button-text-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
