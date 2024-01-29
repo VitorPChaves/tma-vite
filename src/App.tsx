@@ -8,13 +8,14 @@ import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
 import { useTonConnect } from "./hooks/useTonConnect";
 import { CHAIN } from "@tonconnect/protocol";
 import "@twa-dev/sdk";
+import { ToygersHome } from "./components/ToygersHome";
 
 const StyledApp = styled.div`
-  background-color: #e8e8e8;
+  background-color: #ffffff;
   color: black;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #222;
+    background-color: #ffffff;
     color: white;
   }
   min-height: 100vh;
@@ -34,7 +35,7 @@ function App() {
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
-            <div className="flex items-end justify-end w-full border">
+            <div className="flex items-end justify-end w-full">
               <TonConnectButton />
             </div>
             {/* <Button>
@@ -45,9 +46,11 @@ function App() {
                 : "N/A"}
             </Button> */}
           </FlexBoxRow>
-          <Counter />
+          <div></div>
+          <ToygersHome />
+          {/* <Counter />
           <TransferTon />
-          <Jetton />
+          <Jetton /> */}
         </FlexBoxCol>
       </AppContainer>
     </StyledApp>
