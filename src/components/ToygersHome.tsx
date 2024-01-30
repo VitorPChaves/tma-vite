@@ -2,6 +2,10 @@ import { TonConnectButton } from "@tonconnect/ui-react";
 import { useCounterContract } from "../hooks/useCounterContract";
 import { useTonConnect } from "../hooks/useTonConnect";
 
+import padlock from "/padlock.png";
+import toycoin from "/toy-coin.png";
+import toybuilder from "/toybuilder.png";
+
 import {
   Card,
   FlexBoxCol,
@@ -9,10 +13,12 @@ import {
   Ellipsis,
   Button,
 } from "./styled/styled";
+import { useEffect } from "react";
 
 export function ToygersHome() {
   const { connected } = useTonConnect();
   const { value, address, sendIncrement } = useCounterContract();
+  //   document.getElementById("toybuilder").src = toybuilder;
 
   return (
     <div className="">
@@ -22,11 +28,7 @@ export function ToygersHome() {
         <p className="text-[18px] text-[#00000060]">
           $<b className="text-[#000000]">TOY</b>
         </p>
-        <img
-          alt="toy"
-          src="/toy-coin.png"
-          className="mt-[-10px] w-[150px] h-[150px]"
-        />
+        <img src={toycoin} className="mt-[-10px] w-[150px] h-[150px]" />
         <div className="flex items-center justify-center absolute right-[0px] bottom-[-2px] mr-[14px] w-[100px] h-[34px] border-[2px] rounded-[10px] border-[#2EA7F2] bg-[#FFFFFF] cursor-pointer hover:scale-[1.08] smooth-transition">
           <p className="text-center text-[#2EA7F2]">Buy</p>
         </div>
@@ -36,7 +38,7 @@ export function ToygersHome() {
         <b className="text-[18px] text-[#000000]">ToyBuilder</b>
         <img
           alt="toy"
-          src="/toybuilder.png"
+          src={toybuilder}
           className="mt-[-10px] w-[150px] h-[150px]"
         />
         <div className="flex items-center justify-center absolute right-[0px] bottom-[-2px] mr-[14px] w-[100px] h-[34px] border-[2px] rounded-[10px] border-[#2EA7F2] bg-[#FFFFFF] cursor-pointer hover:scale-[1.08] smooth-transition">
@@ -46,7 +48,7 @@ export function ToygersHome() {
 
       <div className="flex flex-row gap-[4px] items-center justify-center w-full mt-[20px] mb-[10px]">
         <b className="text-[#000000] text-[22px]">TOYGERS</b>
-        <img alt="locked" src="/padlock.png" className="w-[20px] h-[20px]" />
+        <img alt="locked" src={padlock} className="w-[20px] h-[20px]" />
       </div>
 
       <div className="flex flex-row justify-around w-full gap-[20px]">
