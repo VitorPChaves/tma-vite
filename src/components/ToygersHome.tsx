@@ -5,6 +5,8 @@ import { useTonConnect } from "../hooks/useTonConnect";
 import padlock from "/padlock.png";
 import toycoin from "/toy-coin.png";
 import toybuilder from "/toybuilder.png";
+import toygersgold from "/toygers-gold.png";
+import toygerssilver from "/toygers-silver.png";
 
 import {
   Card,
@@ -59,7 +61,7 @@ export function ToygersHome() {
           </div>
           <img
             alt="toy"
-            src="/toygers-gold.png"
+            src={toygersgold}
             className="h-[150px] mt-[-20px] hover:scale-[1.12] smooth-transition"
           />
           <div className="flex items-center justify-center mb-[-2px] w-[100px] h-[34px] border-[2px] rounded-[10px] border-[#2EA7F2] bg-[#FFFFFF] cursor-pointer hover:scale-[1.08] smooth-transition">
@@ -74,7 +76,7 @@ export function ToygersHome() {
           </div>
           <img
             alt="toy"
-            src="/toygers-silver.png"
+            src={toygerssilver}
             className="h-[150px] mt-[-20px] hover:scale-[1.12] smooth-transition"
           />
           <div className="flex items-center justify-center mb-[-2px] w-[100px] h-[34px] border-[2px] rounded-[10px] border-[#2EA7F2] bg-[#FFFFFF] cursor-pointer hover:scale-[1.08] smooth-transition">
