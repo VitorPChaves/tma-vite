@@ -71,8 +71,8 @@ export function ToygersHome() {
 
         <div className="flex flex-col items-center justify-between w-[160px] md:w-[40%] h-[240px] border-[2px] rounded-[20px] border-[#2EA7F2] hover:scale-[1.02] smooth-transition">
           <div className="flex flex-row w-full items-start justify-between p-[12px] text-[#000000] text-[12px] md:text-[14px]">
-            <p>Serie 1</p>
-            <p>100 units</p>
+            <p>Serie 2</p>
+            <p>500 units</p>
           </div>
           <img
             alt="toy"
